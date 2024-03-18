@@ -1,9 +1,12 @@
 import fsm from "fs/promises";
 import path from "path";
 import fs from "fs";
+import readline from "readline-sync";
 
-const dirPath = path.join(`${process.cwd()}`);
-const testDir = path.join(path.dirname(dirPath), "/test");
+const testDir = readline.question(" Enter URL : ");
+
+// const dirPath = path.join(`${process.cwd()}`);
+// const testDir = path.join(path.dirname(dirPath), "/test");
 // console.log(parentDir);
 
 async function readDirectory(directory) {
